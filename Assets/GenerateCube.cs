@@ -71,9 +71,28 @@ public class GenerateCube : MonoBehaviour
             
             new Vector3(1.0f, -1.0f, -1.0f),
             new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f)
+            new Vector3(1.0f, 1.0f, 1.0f),
 
             // Define more vertices here!
+
+            // Front Face
+            new Vector3(1.0f, 1.0f, 1.0f),
+            new Vector3(-1.0f, 1.0f,1.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
+
+            new Vector3(1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, 1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
+
+            // Back Face
+
+            new Vector3(-1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
+
+            new Vector3(-1.0f, -1.0f, -1.0f),
+            new Vector3(-1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f)
         });
 
         // Step 2: Define the vertex colours. There is a one-to-one index
@@ -100,13 +119,13 @@ public class GenerateCube : MonoBehaviour
             Color.red,
 
             // Left face
-            Color.yellow, 
-            Color.yellow,
-            Color.yellow,
+            Color.cyan, 
+            Color.cyan,
+            Color.cyan,
             
-            Color.yellow,
-            Color.yellow,
-            Color.yellow,
+            Color.cyan,
+            Color.cyan,
+            Color.cyan,
 
             // Right face
             Color.yellow, 
@@ -115,9 +134,28 @@ public class GenerateCube : MonoBehaviour
             
             Color.yellow,
             Color.yellow,
-            Color.yellow
-            
+            Color.yellow,
+
             // Define more colours here!
+
+            // Front face
+            Color.blue, 
+            Color.blue,
+            Color.blue,
+            
+            Color.blue, 
+            Color.blue,
+            Color.blue,
+
+            // Back face
+            Color.green, 
+            Color.green, 
+            Color.green,
+
+            Color.green, 
+            Color.green, 
+            Color.green
+
         });
 
         // Step 3: Define the indices. The indices "connect" vertices together
